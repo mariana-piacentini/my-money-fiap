@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --green-1: #264E43;
+  --green-2: #7FEBCC;
+  --green-3: #D8FFF4;
+  --font-1: 'Nunito', sans-serif;
+  --font-2: 'Bungee', sans-serif;
+  font-size: 62.5%;
+}
+
+html,body {
+  overflow: hidden;
+  background-color: var(--green-2);
+}
+
+
+header {
+  background-color: #7FEBCC;
+  height: 7vh;
+  display: flex;
+  justify-content: end;
+  margin: 2% 3%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--font-2);
+  color: var(--green-1);
+  margin-bottom: 5vmin;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-1);
+
+}
+
+input {
+  background-color: var(--green-3);
+  height: 5vmin;
+}
+
+.form-label {
+  font-size: 3vmin;
+  font-weight: 700;
+  margin-left: 12.5%;
+}
+
+.forgot-login {
+  font-size: 2.5vmin;
+  color: var(--green-1);
+}
+
+.login {
+  font-family: var(--font-1);
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: var(--green-3);
+}
+
+.login:hover {
+  background-color: var(--green-1);
+  color: var(--green-3);
+  transition: 0.5s;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.subscribe a {
+  color: var(--green-1);
+}
+
+.login-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.external-login {
+  display: flex;
+  flex-direction: row;
+}
+
+.external-login a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.external-login a:hover {
+  background-color: var(--green-1) !important;
+  color: var(--green-3);
+  transition: 0.5s;
+}
+
+.fa-google {
+  color: #db4a39;
+  font-size: 2.5rem;
+}
+
+.fa-square-facebook {
+  color: #3b5998;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 500px) { 
+  main{
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 430px) { 
+  main{
+    margin-top: 25%;
+  }
+}
